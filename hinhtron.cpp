@@ -37,9 +37,10 @@ public:
 
 int main()
 {
-	point I;
-	I.setX(3.0);
-	I.setY(5.0);
+	point I(3,5);
+	hinhtron C(I,5);
+	cout<<C.chuvi()<<endl;
+	cout<<C.dientich()<<endl;
 }
 
 point::point()
@@ -88,7 +89,7 @@ bool hinhtron::setC(const point &)
 
 bool hinhtron::setC(point I)
 {
-	this->I;
+	this->I=I;
 	return 1;
 }
 bool hinhtron::setR(double r)
